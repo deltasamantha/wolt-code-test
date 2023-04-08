@@ -3,6 +3,7 @@ import {View} from "react-native";
 
 import {styles} from "./SlotsList.styles";
 import {Slot} from "../../models/TimeSlot";
+import {formatTime} from "../../utils/DateTimeUtils";
 import AppText from "../AppText/AppText";
 
 interface Props {
@@ -23,7 +24,9 @@ const SlotsList: React.FC<Props> = ({slots}: Props) => {
             type="regular"
             color="dark"
             size="m"
-            key={index}>{`${slot.open} - ${slot.close}`}</AppText>
+            key={index}>{`${formatTime(slot.open)} -  ${formatTime(
+            slot.close!,
+          )}`}</AppText>
         ))}
     </View>
   );

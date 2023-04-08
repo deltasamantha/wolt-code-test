@@ -10,14 +10,26 @@ import SlotsList from "../SlotsList/SlotsList";
 interface Props {
   day: DayType;
   slots: Slot[];
+  isToday?: boolean;
 }
 
-const ListItem: React.FC<Props> = ({day, slots}: Props) => {
+const ListItem: React.FC<Props> = ({day, slots, isToday}: Props) => {
   return (
     <View style={styles.rootContainer}>
-      <AppText size="m" type="semiBold">
-        {day}
-      </AppText>
+      <View style={styles.dateContainer}>
+        <AppText size="m" type="semiBold">
+          {day}
+        </AppText>
+        {isToday && (
+          <AppText
+            size="s"
+            type="bold"
+            color="accent"
+            style={styles.todayIndicator}>
+            TODAY
+          </AppText>
+        )}
+      </View>
       <SlotsList slots={slots} />
     </View>
   );

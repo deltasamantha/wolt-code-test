@@ -7,6 +7,7 @@ import Divider from "../../components/Divider/Divider";
 import ListHeader from "../../components/ListHeader/ListHeader";
 import ListItem from "../../components/ListItem/ListItem";
 import {getHoursData} from "../../utils/DataUtils";
+import {getTodayDay} from "../../utils/DateTimeUtils";
 
 const HomeScreen: React.FC = () => {
   const data = useMemo(() => {
@@ -19,7 +20,13 @@ const HomeScreen: React.FC = () => {
         style={styles.list}
         data={data}
         contentContainerStyle={styles.listContent}
-        renderItem={({item}) => <ListItem day={item.day} slots={item.slots} />}
+        renderItem={({item}) => (
+          <ListItem
+            day={item.day}
+            slots={item.slots}
+            isToday={item.day === getTodayDay()}
+          />
+        )}
         ListHeaderComponent={<ListHeader title="Opening hours" />}
         ListFooterComponent={<View style={styles.listFooter} />}
         ItemSeparatorComponent={() => <Divider type="light" />}

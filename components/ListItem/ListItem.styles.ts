@@ -8,4 +8,11 @@ export const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
   },
+  dateContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+  },
+  todayIndicator: {
+    paddingStart: theme.spacing.md,
+  },
 });
