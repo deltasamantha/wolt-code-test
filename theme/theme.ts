@@ -5,8 +5,8 @@ const theme = {
     colorAccent: "#5BCB02",
     colorBlack: "#000000",
     colorWhite: "#FFFFFF",
-    fontColorDark: "#202125",
-    fontColorLight: "#A1A2A4",
+    colorDark: "#202125",
+    colorLight: "#A1A2A4",
   },
   borderRadius: {
     sm: 5,

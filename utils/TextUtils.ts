@@ -37,9 +37,9 @@ export const getFontFamily = (type: TextType) => {
 export const getFontColor = (color: TextColorType) => {
   switch (color) {
     case "light":
-      return theme.colors.fontColorLight;
+      return theme.colors.colorLight;
     case "dark":
-      return theme.colors.fontColorDark;
+      return theme.colors.colorDark;
     case "accent":
       return theme.colors.colorAccent;
     default:
