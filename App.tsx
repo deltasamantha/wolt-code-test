@@ -8,9 +8,10 @@ import {
 import * as SplashScreen from "expo-splash-screen";
 import {StatusBar} from "expo-status-bar";
 import {useCallback} from "react";
-import {View} from "react-native";
+import {SafeAreaProvider} from "react-native-safe-area-context";
 
 import {styles} from "./App.styles";
+import HomeScreen from "./screens/HomeScreen/HomeScreen";
 
 const App: React.FC = () => {
   const [fontsLoaded] = useFonts({
@@ -27,9 +28,10 @@ const App: React.FC = () => {
   }, [fontsLoaded]);
 
   return (
-    <View style={styles.rootView} onLayout={onLayoutRootView}>
+    <SafeAreaProvider style={styles.rootView} onLayout={onLayoutRootView}>
       <StatusBar style="dark" />
-    </View>
+      <HomeScreen />
+    </SafeAreaProvider>
   );
 };
 

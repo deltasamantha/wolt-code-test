@@ -6,7 +6,6 @@ export const styles = StyleSheet.create({
   rootContainer: {
     flexDirection: "column",
     backgroundColor: theme.colors.colorWhite,
-    paddingHorizontal: theme.spacing.md,
     paddingTop: theme.spacing.lg,
     borderTopStartRadius: theme.borderRadius.md,
     borderTopEndRadius: theme.borderRadius.md,

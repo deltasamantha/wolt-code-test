@@ -4,7 +4,7 @@ import theme from "../theme/theme";
 export const getDividerColor = (type: DividerType) => {
   switch (type) {
     case "light":
-      return theme.colors.colorLight;
+      return theme.colors.colorExtraLight;
     case "dark":
       return theme.colors.colorDark;
   }

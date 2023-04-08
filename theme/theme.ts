@@ -7,6 +7,7 @@ const theme = {
     colorWhite: "#FFFFFF",
     colorDark: "#202125",
     colorLight: "#A1A2A4",
+    colorExtraLight: "#EEEEEE",
   },
   borderRadius: {
     sm: 5,
@@ -29,6 +30,19 @@ const theme = {
     small: 16,
     medium: 22,
     large: 30,
+  },
+  opacity: {
+    shadow: 0.2,
+  },
+  shadowRadius: {
+    sm: 3,
+    md: 5,
+    lg: 8,
+  },
+  shadowOffset: {
+    sm: 2,
+    md: 4,
+    lg: 8,
   },
 };
 
