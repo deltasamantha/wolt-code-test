@@ -1,6 +1,12 @@
 import {TextSizeType, TextType, TextColorType} from "../models/TextType";
 import theme from "../theme/theme";
 
+/**
+ * Get the font size incorporate with the text size type
+ *
+ * @param type - Text size type "s" | "m" | "l"
+ * @returns font size incorporate with the text size type
+ */
 export const getFontSize = (type: TextSizeType) => {
   switch (type) {
     case "s":
@@ -12,6 +18,12 @@ export const getFontSize = (type: TextSizeType) => {
   }
 };
 
+/**
+ * Get the line height incorporate with the text size type
+ *
+ * @param type - Text size type "s" | "m" | "l"
+ * @returns font line height incorporate with the text size type
+ */
 export const getFontLineHeight = (type: TextSizeType) => {
   switch (type) {
     case "s":
@@ -23,6 +35,12 @@ export const getFontLineHeight = (type: TextSizeType) => {
   }
 };
 
+/**
+ * Get the font family incorporate with the text type
+ *
+ * @param type - text type "bold" | "semiBold" | "regular"
+ * @returns font family incorporate with the text type
+ */
 export const getFontFamily = (type: TextType) => {
   switch (type) {
     case "regular":
@@ -34,6 +52,12 @@ export const getFontFamily = (type: TextType) => {
   }
 };
 
+/**
+ * Get the font color incorporate with the text color type
+ *
+ * @param color - text color type
+ * @returns font color incorporate with the text color type or the color passed in
+ */
 export const getFontColor = (color: TextColorType) => {
   switch (color) {
     case "light":

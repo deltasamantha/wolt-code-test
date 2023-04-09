@@ -1,3 +1,7 @@
+/**
+ * @author Samantha Withanage
+ */
+
 import {
   useFonts,
   Roboto_300Light,
