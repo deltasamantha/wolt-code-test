@@ -21,8 +21,6 @@ export const styles = StyleSheet.create({
     borderRadius: theme.borderRadius.lg,
   },
   listContent: {
-    backgroundColor: theme.colors.colorWhite,
-    paddingHorizontal: theme.spacing.lg,
     shadowColor: theme.colors.colorDark,
     shadowOffset: {width: theme.shadowOffset.sm, height: theme.shadowOffset.md},
     shadowOpacity: theme.opacity.shadow,

@@ -9,6 +9,7 @@ export const styles = StyleSheet.create({
     paddingTop: theme.spacing.lg,
     borderTopStartRadius: theme.borderRadius.md,
     borderTopEndRadius: theme.borderRadius.md,
+    paddingHorizontal: theme.spacing.lg,
   },
   titleContainer: {
     flexDirection: "row",
@@ -23,5 +24,14 @@ export const styles = StyleSheet.create({
     height: 40,
     borderRadius: 20,
     backgroundColor: theme.colors.colorLight,
+  },
+});
+
+export const storyStyles = StyleSheet.create({
+  rootContainer: {
+    flex: 1,
+    paddingHorizontal: theme.spacing.lg,
+    backgroundColor: theme.colors.colorBackground,
+    justifyContent: "center",
   },
 });

@@ -9,7 +9,7 @@ import {
   getFontSize,
 } from "../../utils/TextUtils";
 
-interface Props extends TextProps {
+export interface Props extends TextProps {
   children?: ReactNode;
   size?: TextSizeType;
   type?: TextType;

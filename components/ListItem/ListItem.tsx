@@ -7,7 +7,7 @@ import {Slot} from "../../models/TimeSlot";
 import AppText from "../AppText/AppText";
 import SlotsList from "../SlotsList/SlotsList";
 
-interface Props {
+export interface Props {
   day: DayType;
   slots: Slot[];
   isToday?: boolean;

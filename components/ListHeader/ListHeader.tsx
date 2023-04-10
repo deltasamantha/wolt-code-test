@@ -5,7 +5,7 @@ import {styles} from "./ListHeader.styles";
 import AppText from "../AppText/AppText";
 import Divider from "../Divider/Divider";
 
-interface Props {
+export interface Props {
   title: string;
 }
 

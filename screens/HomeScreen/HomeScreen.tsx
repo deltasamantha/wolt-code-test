@@ -3,9 +3,9 @@ import {View, FlatList} from "react-native";
 import {SafeAreaView} from "react-native-safe-area-context";
 
 import {styles} from "./HomeScreen.styles";
-import Divider from "../../components/Divider/Divider";
 import ListHeader from "../../components/ListHeader/ListHeader";
 import ListItem from "../../components/ListItem/ListItem";
+import ListSeparator from "../../components/ListSeparator/ListSeparator";
 import {getHoursData} from "../../utils/DataUtils";
 import {getTodayDay} from "../../utils/DateTimeUtils";
 
@@ -29,9 +29,10 @@ const HomeScreen: React.FC = () => {
         )}
         ListHeaderComponent={<ListHeader title="Opening hours" />}
         ListFooterComponent={<View style={styles.listFooter} />}
-        ItemSeparatorComponent={() => <Divider type="light" />}
+        ItemSeparatorComponent={() => <ListSeparator />}
         keyExtractor={item => item.day}
         stickyHeaderIndices={[0]}
+        showsVerticalScrollIndicator={false}
       />
     </SafeAreaView>
   );

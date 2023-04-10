@@ -6,7 +6,7 @@ import {Slot} from "../../models/TimeSlot";
 import {getTimeSlotTimeStamp} from "../../utils/DateTimeUtils";
 import AppText from "../AppText/AppText";
 
-interface Props {
+export interface Props {
   slots: Slot[];
 }
 

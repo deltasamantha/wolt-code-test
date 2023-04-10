@@ -6,7 +6,7 @@ import {getDividerColor} from "../../utils/DividerUtils";
 
 export type DividerType = "light" | "dark";
 
-interface Props {
+export interface Props {
   type?: DividerType;
 }
 
