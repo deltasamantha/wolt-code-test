@@ -9,11 +9,13 @@ import {
   Roboto_500Medium,
   Roboto_700Bold,
 } from "@expo-google-fonts/roboto";
+import Constants from "expo-constants";
 import * as SplashScreen from "expo-splash-screen";
 import {StatusBar} from "expo-status-bar";
 import {useCallback} from "react";
 import {SafeAreaProvider} from "react-native-safe-area-context";
 
+import StorybookUIRoot from "./.storybook/index";
 import {styles} from "./App.styles";
 import HomeScreen from "./screens/HomeScreen/HomeScreen";
 
@@ -39,4 +41,10 @@ const App: React.FC = () => {
   );
 };
 
-export default App;
+let AppEntryPoint = App;
+
+if (Constants.expoConfig?.extra?.storybookEnabled) {
+  AppEntryPoint = StorybookUIRoot;
+}
+
+export default AppEntryPoint;
