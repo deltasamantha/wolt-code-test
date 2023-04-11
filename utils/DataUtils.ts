@@ -15,7 +15,8 @@ export const setupOpeningHoursData = (openingHoursData: JSONObject) => {
         .sort((item, nextItem) => item.value - nextItem.value)
         .reduce<Slot[]>(
           (accumulator, currentSlot: TimeSlot, currentIndex: number) => {
-            if (currentIndex === 0 && currentSlot.type === "close") {
+            const {type, value} = currentSlot;
+            if (currentIndex === 0 && type === "close") {
               const previousDay = openingHours.pop();
               if (previousDay) {
                 const {day, slots} = previousDay;
@@ -23,16 +24,16 @@ export const setupOpeningHoursData = (openingHoursData: JSONObject) => {
                 if (lastSlot) {
                   openingHours.push({
                     day,
-                    slots: [...slots, {...lastSlot, close: currentSlot.value}],
+                    slots: [...slots, {...lastSlot, close: value}],
                   });
                 }
               }
             } else {
-              if (currentSlot.type === "open") {
-                accumulator.push({open: currentSlot.value});
+              if (type === "open") {
+                accumulator.push({open: value});
               } else {
                 const item = accumulator.pop();
-                accumulator.push({...item!, close: currentSlot.value});
+                accumulator.push({...item!, close: value});
               }
             }
             return accumulator;
