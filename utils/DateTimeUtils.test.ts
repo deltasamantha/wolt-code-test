@@ -153,11 +153,11 @@ describe("getTimeSlotTimeStamp", () => {
     expect(timeStamp).toBeTruthy();
   });
 
-  test("Give exception if one of the seconds exceeds 86399", () => {
+  test("Give Invalid time slot if one of the seconds exceeds 86399", () => {
     const openingTime = 64800;
     const closingTime = 90000;
-    expect(() => getTimeSlotTimeStamp(openingTime, closingTime)).toThrow(
-      "Invalid seconds value",
+    expect(getTimeSlotTimeStamp(openingTime, closingTime)).toBe(
+      "Invalid time slot",
     );
   });
 });
