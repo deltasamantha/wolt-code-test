@@ -11,92 +11,188 @@ exports[`CoverBoard Should render CoverBoard properly 1`] = `
     }
   }
 >
-  <Image
-    source={1}
+  <ViewManagerAdapter_ExpoImage
+    height={600}
+    left={0}
+    onError={[Function]}
+    onLoad={[Function]}
+    onLoadStart={[Function]}
+    onProgress={[Function]}
+    position="absolute"
+    proxiedProperties={
+      {
+        "blurRadius": 0,
+        "cachePolicy": "memory-disk",
+        "contentFit": "cover",
+        "contentPosition": {
+          "left": "50%",
+          "top": "50%",
+        },
+        "placeholder": [
+          {
+            "height": 16,
+            "uri": "blurhash:/%7CrF%3FhV%252WCj%5Bayj%5Ba%7Cj%5Baz_NaeWBj@ayfRayfQfQM%7BM%7Cazj%5Bazf6fQfQfQIpWXofj%5Bayj%5Bj%5BfQayWCoeoeaya%7Dj%5BayfQa%7BoLj%3Fj%5BWVj%5Bayayj%5BfQoff7azayj%5Bayj%5Bj%5Bayofayayayj%5BfQj%5Bayayj%5Bayfjj%5Bj%5Bayjuayj%5B",
+            "width": 16,
+          },
+        ],
+        "priority": "high",
+        "source": [],
+        "tintColor": undefined,
+        "transition": null,
+      }
+    }
     style={
-      [
-        {
-          "position": "absolute",
-        },
-        {
-          "height": 600,
-          "width": 600,
-        },
-        {
-          "left": 0,
-          "top": -300,
-        },
-        {
-          "transform": [
-            {
-              "translateX": undefined,
-            },
-            {
-              "translateY": undefined,
-            },
-          ],
-        },
-      ]
+      {
+        "height": 600,
+        "left": 0,
+        "position": "absolute",
+        "top": -300,
+        "transform": [
+          {
+            "translateX": undefined,
+          },
+          {
+            "translateY": undefined,
+          },
+        ],
+        "width": 600,
+      }
     }
     testID="top-board-item"
-  />
-  <Image
-    source={1}
-    style={
+    top={-300}
+    transform={
       [
         {
-          "position": "absolute",
+          "translateX": undefined,
         },
         {
-          "height": 600,
-          "width": 600,
-        },
-        {
-          "left": -300,
-          "top": 333.5,
-        },
-        {
-          "transform": [
-            {
-              "translateX": undefined,
-            },
-            {
-              "translateY": undefined,
-            },
-          ],
+          "translateY": undefined,
         },
       ]
+    }
+    width={600}
+  />
+  <ViewManagerAdapter_ExpoImage
+    height={600}
+    left={-300}
+    onError={[Function]}
+    onLoad={[Function]}
+    onLoadStart={[Function]}
+    onProgress={[Function]}
+    position="absolute"
+    proxiedProperties={
+      {
+        "blurRadius": 0,
+        "cachePolicy": "memory-disk",
+        "contentFit": "cover",
+        "contentPosition": {
+          "left": "50%",
+          "top": "50%",
+        },
+        "placeholder": [
+          {
+            "height": 16,
+            "uri": "blurhash:/%7CrF%3FhV%252WCj%5Bayj%5Ba%7Cj%5Baz_NaeWBj@ayfRayfQfQM%7BM%7Cazj%5Bazf6fQfQfQIpWXofj%5Bayj%5Bj%5BfQayWCoeoeaya%7Dj%5BayfQa%7BoLj%3Fj%5BWVj%5Bayayj%5BfQoff7azayj%5Bayj%5Bj%5Bayofayayayj%5BfQj%5Bayayj%5Bayfjj%5Bj%5Bayjuayj%5B",
+            "width": 16,
+          },
+        ],
+        "priority": "high",
+        "source": [],
+        "tintColor": undefined,
+        "transition": null,
+      }
+    }
+    style={
+      {
+        "height": 600,
+        "left": -300,
+        "position": "absolute",
+        "top": 333.5,
+        "transform": [
+          {
+            "translateX": undefined,
+          },
+          {
+            "translateY": undefined,
+          },
+        ],
+        "width": 600,
+      }
     }
     testID="middle-board-item"
-  />
-  <Image
-    source={1}
-    style={
+    top={333.5}
+    transform={
       [
         {
-          "position": "absolute",
+          "translateX": undefined,
         },
         {
-          "height": 750,
-          "width": 750,
-        },
-        {
-          "left": 330,
-          "top": 794,
-        },
-        {
-          "transform": [
-            {
-              "translateX": undefined,
-            },
-            {
-              "translateY": undefined,
-            },
-          ],
+          "translateY": undefined,
         },
       ]
     }
+    width={600}
+  />
+  <ViewManagerAdapter_ExpoImage
+    height={750}
+    left={330}
+    onError={[Function]}
+    onLoad={[Function]}
+    onLoadStart={[Function]}
+    onProgress={[Function]}
+    position="absolute"
+    proxiedProperties={
+      {
+        "blurRadius": 0,
+        "cachePolicy": "memory-disk",
+        "contentFit": "cover",
+        "contentPosition": {
+          "left": "50%",
+          "top": "50%",
+        },
+        "placeholder": [
+          {
+            "height": 16,
+            "uri": "blurhash:/%7CrF%3FhV%252WCj%5Bayj%5Ba%7Cj%5Baz_NaeWBj@ayfRayfQfQM%7BM%7Cazj%5Bazf6fQfQfQIpWXofj%5Bayj%5Bj%5BfQayWCoeoeaya%7Dj%5BayfQa%7BoLj%3Fj%5BWVj%5Bayayj%5BfQoff7azayj%5Bayj%5Bj%5Bayofayayayj%5BfQj%5Bayayj%5Bayfjj%5Bj%5Bayjuayj%5B",
+            "width": 16,
+          },
+        ],
+        "priority": "high",
+        "source": [],
+        "tintColor": undefined,
+        "transition": null,
+      }
+    }
+    style={
+      {
+        "height": 750,
+        "left": 330,
+        "position": "absolute",
+        "top": 794,
+        "transform": [
+          {
+            "translateX": undefined,
+          },
+          {
+            "translateY": undefined,
+          },
+        ],
+        "width": 750,
+      }
+    }
     testID="bottom-board-item"
+    top={794}
+    transform={
+      [
+        {
+          "translateX": undefined,
+        },
+        {
+          "translateY": undefined,
+        },
+      ]
+    }
+    width={750}
   />
 </View>
 `;
