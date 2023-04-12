@@ -2,6 +2,8 @@ import {StyleSheet} from "react-native";
 
 import theme from "../../theme/theme";
 
+const CLOCK_ICON_SIZE = 30;
+
 export const styles = StyleSheet.create({
   rootContainer: {
     flexDirection: "column",
@@ -20,8 +22,8 @@ export const styles = StyleSheet.create({
     marginLeft: theme.spacing.md,
   },
   clock: {
-    width: 30,
-    height: 30,
+    width: CLOCK_ICON_SIZE,
+    height: CLOCK_ICON_SIZE,
   },
 });
 
