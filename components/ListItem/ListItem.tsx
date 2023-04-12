@@ -1,5 +1,6 @@
 import React from "react";
 import {View} from "react-native";
+import Animated, {Easing, FadeIn} from "react-native-reanimated";
 
 import {styles} from "./ListItem.styles";
 import locale from "../../config/Locale";
@@ -11,12 +12,15 @@ import SlotsList from "../SlotsList/SlotsList";
 export interface Props {
   day: DayType;
   slots: Slot[];
+  index: number;
   isToday?: boolean;
 }
 
-const ListItem: React.FC<Props> = ({day, slots, isToday}: Props) => {
+const ListItem: React.FC<Props> = ({day, slots, isToday, index}: Props) => {
   return (
-    <View style={styles.rootContainer}>
+    <Animated.View
+      style={styles.rootContainer}
+      entering={FadeIn.delay(200 + 50 * index).easing(Easing.linear)}>
       <View style={styles.dateContainer}>
         <AppText size="m" type="semiBold">
           {locale.weekDay[day]}
@@ -32,7 +36,7 @@ const ListItem: React.FC<Props> = ({day, slots, isToday}: Props) => {
         )}
       </View>
       <SlotsList slots={slots} />
-    </View>
+    </Animated.View>
   );
 };
 

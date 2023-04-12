@@ -16,7 +16,7 @@ export const styles = StyleSheet.create({
   titleContainer: {
     flexDirection: "row",
     alignItems: "center",
-    paddingBottom: theme.spacing.sm,
+    paddingBottom: theme.spacing.md,
   },
   title: {
     marginLeft: theme.spacing.md,

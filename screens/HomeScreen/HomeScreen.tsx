@@ -21,10 +21,11 @@ const HomeScreen: React.FC = () => {
         style={styles.list}
         data={data}
         contentContainerStyle={styles.listContent}
-        renderItem={({item}) => (
+        renderItem={({item, index}) => (
           <ListItem
             day={item.day}
             slots={item.slots}
+            index={index}
             isToday={item.day === getTodayDay()}
           />
         )}

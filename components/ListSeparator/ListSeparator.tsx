@@ -1,14 +1,16 @@
 import React from "react";
-import {View} from "react-native";
+import Animated, {Easing, FadeIn} from "react-native-reanimated";
 
 import {styles} from "./ListSeparator.styles";
 import Divider from "../Divider/Divider";
 
 const ListSeparator: React.FC = () => {
   return (
-    <View style={styles.rootContainer}>
+    <Animated.View
+      style={styles.rootContainer}
+      entering={FadeIn.delay(200).easing(Easing.linear)}>
       <Divider type="light" />
-    </View>
+    </Animated.View>
   );
 };
 
