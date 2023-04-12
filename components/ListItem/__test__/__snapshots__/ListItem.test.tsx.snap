@@ -2,20 +2,6 @@
 
 exports[`ListItem Should render ListItem properly 1`] = `
 <View
-  animatedStyle={
-    {
-      "value": {},
-    }
-  }
-  collapsable={false}
-  entering={
-    FadeIn {
-      "build": [Function],
-      "delayV": NaN,
-      "easingV": [Function],
-      "randomizeDelay": false,
-    }
-  }
   style={
     {
       "alignItems": "flex-start",

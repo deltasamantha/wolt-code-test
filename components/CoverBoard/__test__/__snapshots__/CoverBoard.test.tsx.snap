@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CoverBoard Should render CoverBoard properly 1`] = `
+<View
+  style={
+    {
+      "flex": 1,
+      "height": "100%",
+      "position": "absolute",
+      "width": "100%",
+    }
+  }
+>
+  <Image
+    source={1}
+    style={
+      [
+        {
+          "position": "absolute",
+        },
+        {
+          "height": 600,
+          "width": 600,
+        },
+        {
+          "left": 0,
+          "top": -300,
+        },
+        {
+          "transform": [
+            {
+              "translateX": undefined,
+            },
+            {
+              "translateY": undefined,
+            },
+          ],
+        },
+      ]
+    }
+    testID="top-board-item"
+  />
+  <Image
+    source={1}
+    style={
+      [
+        {
+          "position": "absolute",
+        },
+        {
+          "height": 600,
+          "width": 600,
+        },
+        {
+          "left": -300,
+          "top": 333.5,
+        },
+        {
+          "transform": [
+            {
+              "translateX": undefined,
+            },
+            {
+              "translateY": undefined,
+            },
+          ],
+        },
+      ]
+    }
+    testID="middle-board-item"
+  />
+  <Image
+    source={1}
+    style={
+      [
+        {
+          "position": "absolute",
+        },
+        {
+          "height": 750,
+          "width": 750,
+        },
+        {
+          "left": 330,
+          "top": 794,
+        },
+        {
+          "transform": [
+            {
+              "translateX": undefined,
+            },
+            {
+              "translateY": undefined,
+            },
+          ],
+        },
+      ]
+    }
+    testID="bottom-board-item"
+  />
+</View>
+`;

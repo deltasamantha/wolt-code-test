@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CoverBoardItem Should render CoverBoardItem properly 1`] = `
+<Image
+  source={1}
+  style={
+    [
+      {
+        "position": "absolute",
+      },
+      {
+        "height": 100,
+        "width": 100,
+      },
+      {
+        "left": 10,
+        "top": 10,
+      },
+      {
+        "transform": [
+          {
+            "translateX": undefined,
+          },
+          {
+            "translateY": undefined,
+          },
+        ],
+      },
+    ]
+  }
+  testID="undefined-board-item"
+/>
+`;

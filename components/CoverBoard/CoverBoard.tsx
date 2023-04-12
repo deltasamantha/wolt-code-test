@@ -25,6 +25,7 @@ const CoverBoard: React.FC = () => {
         destinationX={0}
         destinationY={-itemSize / 2}
         style={{width: itemSize, height: itemSize}}
+        testID="top"
       />
 
       <CoverBoardItem
@@ -34,6 +35,7 @@ const CoverBoard: React.FC = () => {
         destinationX={-itemSize / 2}
         destinationY={height / 4}
         style={{width: itemSize, height: itemSize}}
+        testID="middle"
       />
 
       <CoverBoardItem
@@ -43,6 +45,7 @@ const CoverBoard: React.FC = () => {
         destinationX={width - itemSize * 0.7}
         destinationY={height - itemSize * 0.9}
         style={{width: bottomItemSize, height: bottomItemSize}}
+        testID="bottom"
       />
     </View>
   );

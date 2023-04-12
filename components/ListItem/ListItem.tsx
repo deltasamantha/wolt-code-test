@@ -1,6 +1,6 @@
 import React from "react";
 import {View} from "react-native";
-import Animated, {Easing, FadeIn} from "react-native-reanimated";
+import Animated, {ComplexAnimationBuilder} from "react-native-reanimated";
 
 import {styles} from "./ListItem.styles";
 import locale from "../../config/Locale";
@@ -10,17 +10,27 @@ import AppText from "../AppText/AppText";
 import SlotsList from "../SlotsList/SlotsList";
 
 export interface Props {
+  /**
+   * day to be shown in the item, one of
+   * ```"monday" | "tuesday" | "wednesday" | "thursday" | "friday" | "saturday" | "sunday"```
+   */
   day: DayType;
+  /**
+   * ```{open: number; close?: number;}[]```
+   */
   slots: Slot[];
-  index: number;
   isToday?: boolean;
+  entering?: ComplexAnimationBuilder;
 }
 
-const ListItem: React.FC<Props> = ({day, slots, isToday, index}: Props) => {
+/**
+ * ### List item component
+ * -----
+ * @description Component to list down opening time slots against the dates
+ */
+const ListItem: React.FC<Props> = ({day, slots, isToday, entering}: Props) => {
   return (
-    <Animated.View
-      style={styles.rootContainer}
-      entering={FadeIn.delay(200 + 50 * index).easing(Easing.linear)}>
+    <Animated.View style={styles.rootContainer} entering={entering}>
       <View style={styles.dateContainer}>
         <AppText size="m" type="semiBold">
           {locale.weekDay[day]}

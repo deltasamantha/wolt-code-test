@@ -4,17 +4,30 @@ import {slotsData} from "./mockedData";
 import locale from "../../../config/Locale";
 import ListItem from "../ListItem";
 
-afterEach(cleanup);
+beforeEach(() => {
+  jest.useFakeTimers();
+  jest.mock("react-native-reanimated");
+});
+
+afterEach(() => {
+  jest.runOnlyPendingTimers();
+  jest.useRealTimers();
+  cleanup();
+});
 
 describe("ListItem", () => {
-  it("Should render ListItem properly", () => {
-    const {toJSON} = render(<ListItem day="monday" slots={[]} />);
+  it("Should render ListItem properly", async () => {
+    jest.useFakeTimers();
+    const {toJSON} = await render(<ListItem day="monday" slots={[]} />);
+    jest.advanceTimersByTime(600);
     expect(toJSON()).toMatchSnapshot();
   });
 
   it("ListItem should have a week day", () => {
+    jest.useFakeTimers();
     const mondayText = locale.weekDay.monday;
     render(<ListItem day="monday" slots={[]} />);
+    jest.advanceTimersByTime(600);
     const dayIndicatorText = screen.getByText(mondayText);
     expect(dayIndicatorText.props.children).toBeDefined();
     expect(dayIndicatorText.props.children).toEqual(mondayText);

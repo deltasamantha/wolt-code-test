@@ -2,20 +2,6 @@
 
 exports[`ListHeader Should render ListHeader properly 1`] = `
 <View
-  animatedStyle={
-    {
-      "value": {},
-    }
-  }
-  collapsable={false}
-  entering={
-    FadeIn {
-      "build": [Function],
-      "delayV": 100,
-      "easingV": [Function],
-      "randomizeDelay": false,
-    }
-  }
   style={
     {
       "backgroundColor": "#FFFFFF",
@@ -37,20 +23,6 @@ exports[`ListHeader Should render ListHeader properly 1`] = `
     }
   >
     <Image
-      animatedStyle={
-        {
-          "value": {},
-        }
-      }
-      collapsable={false}
-      entering={
-        FadeIn {
-          "build": [Function],
-          "delayV": 200,
-          "easingV": [Function],
-          "randomizeDelay": false,
-        }
-      }
       source={1}
       style={
         {

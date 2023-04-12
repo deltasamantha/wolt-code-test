@@ -6,8 +6,8 @@ import ListHeader from "../ListHeader";
 afterEach(cleanup);
 
 describe("ListHeader", () => {
-  it("Should render ListHeader properly", () => {
-    const {toJSON} = render(<ListHeader />);
+  it("Should render ListHeader properly", async () => {
+    const {toJSON} = await render(<ListHeader />);
     expect(toJSON()).toMatchSnapshot();
   });
 

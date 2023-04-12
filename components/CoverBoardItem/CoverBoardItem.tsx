@@ -63,7 +63,7 @@ const CoverBoardItem: React.FC<Props> = ({
   return (
     <AnimatedImage
       source={source}
-      testID={`${testID}`}
+      testID={`${testID}-board-item`}
       style={[
         styles.item,
         style,

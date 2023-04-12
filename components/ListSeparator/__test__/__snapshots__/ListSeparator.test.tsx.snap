@@ -2,20 +2,6 @@
 
 exports[`ListSeparator Should render ListHeader properly 1`] = `
 <View
-  animatedStyle={
-    {
-      "value": {},
-    }
-  }
-  collapsable={false}
-  entering={
-    FadeIn {
-      "build": [Function],
-      "delayV": 200,
-      "easingV": [Function],
-      "randomizeDelay": false,
-    }
-  }
   style={
     {
       "backgroundColor": "#FFFFFF",
