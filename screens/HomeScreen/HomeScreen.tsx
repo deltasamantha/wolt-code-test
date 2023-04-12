@@ -11,7 +11,7 @@ import {getHoursData} from "../../utils/DataUtils";
 import {getTodayDay} from "../../utils/DateTimeUtils";
 
 const HomeScreen: React.FC = () => {
-  const data = useMemo(() => {
+  const slotData = useMemo(() => {
     return getHoursData();
   }, []);
 
@@ -19,7 +19,7 @@ const HomeScreen: React.FC = () => {
     <SafeAreaView style={styles.rootContainer} edges={["top", "bottom"]}>
       <FlatList
         style={styles.list}
-        data={data}
+        data={slotData}
         contentContainerStyle={styles.listContent}
         renderItem={({item, index}) => (
           <ListItem
