@@ -20,10 +20,8 @@ export const styles = StyleSheet.create({
     marginLeft: theme.spacing.md,
   },
   clock: {
-    width: 40,
-    height: 40,
-    borderRadius: 20,
-    backgroundColor: theme.colors.colorLight,
+    width: 30,
+    height: 30,
   },
 });
 

@@ -27,7 +27,7 @@ describe("ListHeader", () => {
 
   it("ListHeader should have clock image", () => {
     render(<ListHeader />);
-    const divider = screen.getByTestId("clockImage");
-    expect(divider).toBeTruthy();
+    const clockIcon = screen.getByTestId("clockImage");
+    expect(clockIcon).toBeTruthy();
   });
 });

@@ -21,17 +21,16 @@ exports[`ListHeader Should render ListHeader properly 1`] = `
         "paddingBottom": 4,
       }
     }
-    testID="clockImage"
   >
-    <View
+    <Image
+      source={1}
       style={
         {
-          "backgroundColor": "#A1A2A4",
-          "borderRadius": 20,
-          "height": 40,
-          "width": 40,
+          "height": 30,
+          "width": 30,
         }
       }
+      testID="clockImage"
     />
     <Text
       style={
