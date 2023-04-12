@@ -9,6 +9,10 @@ import ListHeader from "../../components/ListHeader/ListHeader";
 import ListItem from "../../components/ListItem/ListItem";
 import ListPlaceholder from "../../components/ListPlaceholder/ListPlaceholder";
 import ListSeparator from "../../components/ListSeparator/ListSeparator";
+import {
+  LIST_REVEAL_ANIMATION_DELAY,
+  LIST_REVEAL_ANIMATION_STEP,
+} from "../../config/AnimationConfig";
 import {DisplayTimeSlot} from "../../models/TimeSlot";
 import {getHoursData} from "../../utils/DataUtils";
 import {getTodayDay} from "../../utils/DateTimeUtils";
@@ -24,7 +28,9 @@ const HomeScreen: React.FC = () => {
         day={item.day}
         slots={item.slots}
         isToday={item.day === getTodayDay()}
-        entering={FadeIn.delay(200 + 50 * index).easing(Easing.linear)}
+        entering={FadeIn.delay(
+          LIST_REVEAL_ANIMATION_DELAY + LIST_REVEAL_ANIMATION_STEP * index,
+        ).easing(Easing.linear)}
       />
     ),
     [],
