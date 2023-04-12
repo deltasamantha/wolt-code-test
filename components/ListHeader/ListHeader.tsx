@@ -6,7 +6,11 @@ import locale from "../../config/Locale";
 import AppText from "../AppText/AppText";
 import Divider from "../Divider/Divider";
 
-
+/**
+ * ## ListHeader component
+ * -------------
+ * @description List header component of time slots list.
+ */
 const ListHeader: React.FC = () => {
   return (
     <View style={styles.rootContainer}>

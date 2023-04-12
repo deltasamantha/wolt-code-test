@@ -4,7 +4,10 @@ import {View} from "react-native";
 import AppText, {Props} from "./AppText";
 import {storyStyles} from "./AppText.styles";
 
-const DividerMeta: Meta<Props> = {
+/**
+ * Story of AppText
+ */
+const AppTextMeta: Meta<Props> = {
   title: "AppText",
   component: AppText,
   argTypes: {
@@ -36,7 +39,7 @@ const DividerMeta: Meta<Props> = {
   ],
 };
 
-export default DividerMeta;
+export default AppTextMeta;
 
 export const Primary: StoryObj<Props> = {
   args: {

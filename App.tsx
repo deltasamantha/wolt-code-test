@@ -1,6 +1,7 @@
 /**
  * @author Samantha Withanage
  * @version 1.0.0
+ * @description Code test - Assignment from Wolt - Senior React Native Engineer, Courier Group
  */
 
 import {

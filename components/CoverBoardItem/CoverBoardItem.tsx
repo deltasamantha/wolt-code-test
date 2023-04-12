@@ -13,18 +13,34 @@ import Animated, {
 import {styles} from "./CoverBoardItem.styles";
 import {timingConfig} from "../../config/AnimationConfig";
 
+/**
+ * Prop definition for CoverBoardItem component
+ */
 interface Props {
+  /** X coordinates to start image animation from */
   originX: number;
+  /** Y coordinates to start image animation from */
   originY: number;
+  /** X coordinates to end image animation to */
   destinationX: number;
+  /** Y coordinates to end image animation to */
   destinationY: number;
+  /** Image recourse to be displayed */
   source: ImageSourcePropType;
+  /** Style prop for the Image, accepts ImageStyle */
   style: StyleProp<ImageStyle>;
+  /** TestId for testing */
   testID?: string;
 }
 
 const AnimatedImage = Animated.createAnimatedComponent(Image);
 
+/**
+ * ## CoverBoardItem component
+ * ------------
+ * @description Component to render animated images in CoverBoard component. Uses cache enabled Image component for better performance.
+ * @todo Implement animate blur image feature after loading
+ */
 const CoverBoardItem: React.FC<Props> = ({
   originX,
   originY,
@@ -43,12 +59,19 @@ const CoverBoardItem: React.FC<Props> = ({
     translation.value = 1;
   }, []);
 
+  /**
+   * Translate X animation value
+   */
   const plate1TranslateX = useDerivedValue<number>(() => {
     return withTiming(
       interpolate(translation.value, [0, 1], [originX, 0], Extrapolate.CLAMP),
       timingConfig,
     );
   });
+
+  /**
+   * Translate Y animation value
+   */
   const plate1TranslateY = useDerivedValue<number>(() => {
     return withTiming(
       interpolate(translation.value, [0, 1], [originY, 0], Extrapolate.CLAMP),
@@ -56,6 +79,9 @@ const CoverBoardItem: React.FC<Props> = ({
     );
   });
 
+  /**
+   * Translation animation style
+   */
   const plate1Animation = useAnimatedStyle(() => {
     return {
       transform: [

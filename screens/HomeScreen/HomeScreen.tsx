@@ -17,6 +17,11 @@ import {DisplayTimeSlot} from "../../models/TimeSlot";
 import {getHoursData} from "../../utils/DataUtils";
 import {getTodayDay} from "../../utils/DateTimeUtils";
 
+/**
+ * ## HomeScreen component
+ * -------------
+ * @description Component to hold opening time slots list.
+ */
 const HomeScreen: React.FC = () => {
   const slotData = useMemo(() => {
     return getHoursData();

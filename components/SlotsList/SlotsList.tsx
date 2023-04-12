@@ -11,6 +11,11 @@ export interface Props {
   slots: Slot[];
 }
 
+/**
+ * ## SlotsList component
+ * -------------
+ * @description Slots list component to be display in opening hours list.
+ */
 const SlotsList: React.FC<Props> = ({slots}: Props) => {
   return (
     <View style={styles.rootContainer}>

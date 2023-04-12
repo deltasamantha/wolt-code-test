@@ -5,6 +5,11 @@ import {useSharedValue} from "react-native-reanimated";
 import {styles} from "./CoverBoard.styles";
 import CoverBoardItem from "../CoverBoardItem/CoverBoardItem";
 
+/**
+ *  ## CoverBoard component
+ * ----------
+ * @description Component to to cover the background in the home screen.
+ */
 const CoverBoard: React.FC = () => {
   const translation = useSharedValue<number>(0);
   const {width, height} = useWindowDimensions();

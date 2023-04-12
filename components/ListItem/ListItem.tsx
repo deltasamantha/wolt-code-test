@@ -9,6 +9,9 @@ import {Slot} from "../../models/TimeSlot";
 import AppText from "../AppText/AppText";
 import SlotsList from "../SlotsList/SlotsList";
 
+/**
+ * Prop definition for ListItem component
+ */
 export interface Props {
   /**
    * day to be shown in the item, one of
@@ -24,8 +27,8 @@ export interface Props {
 }
 
 /**
- * ### List item component
- * -----
+ * ### ListItem component
+ * -------------
  * @description Component to list down opening time slots against the dates
  */
 const ListItem: React.FC<Props> = ({day, slots, isToday, entering}: Props) => {
