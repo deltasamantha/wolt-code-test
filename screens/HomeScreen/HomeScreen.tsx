@@ -13,7 +13,7 @@ import {
   LIST_REVEAL_ANIMATION_DELAY,
   LIST_REVEAL_ANIMATION_STEP,
 } from "../../config/AnimationConfig";
-import {DisplayTimeSlot} from "../../models/TimeSlot";
+import {DisplayTimeSlot} from "../../models/DisplayTimeSlot";
 import {getHoursData} from "../../utils/DataUtils";
 import {getTodayDay} from "../../utils/DateTimeUtils";
 

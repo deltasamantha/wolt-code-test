@@ -1,3 +1,6 @@
+/**
+ * String resources for the app
+ */
 export default {
   slotsListTitle: "Opening hours",
   today: "Today",

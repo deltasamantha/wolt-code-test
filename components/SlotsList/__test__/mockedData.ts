@@ -1,4 +1,4 @@
-import {Slot} from "../../../models/TimeSlot";
+import {Slot} from "../../../models/DisplayTimeSlot";
 
 export const slotsData: Slot[] = [
   {

@@ -4,8 +4,8 @@ import Animated, {ComplexAnimationBuilder} from "react-native-reanimated";
 
 import {styles} from "./ListItem.styles";
 import locale from "../../config/Locale";
-import {DayType} from "../../models/OpeningHours";
-import {Slot} from "../../models/TimeSlot";
+import {Slot} from "../../models/DisplayTimeSlot";
+import {DayType} from "../../models/TimeSlot";
 import AppText from "../AppText/AppText";
 import SlotsList from "../SlotsList/SlotsList";
 

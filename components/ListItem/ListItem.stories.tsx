@@ -3,8 +3,8 @@ import {View} from "react-native";
 
 import ListItem, {Props} from "./ListItem";
 import {storyStyles} from "./ListItem.styles";
-import {DayType} from "../../models/OpeningHours";
-import {Slot} from "../../models/TimeSlot";
+import {Slot} from "../../models/DisplayTimeSlot";
+import {DayType} from "../../models/TimeSlot";
 
 const mockedSlots: Slot[] = [
   {

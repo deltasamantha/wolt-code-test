@@ -1,11 +1,24 @@
-import {DayType} from "./OpeningHours";
-
-export interface Slot {
-  open: number;
-  close?: number;
+/**
+ * Time slot shape
+ */
+export interface TimeSlot {
+  type: TimeSlotType;
+  value: number;
 }
 
-export interface DisplayTimeSlot {
-  day: DayType;
-  slots: Slot[];
-}
+/**
+ * Time slot types
+ */
+export type TimeSlotType = "open" | "close";
+
+/**
+ * Date name types
+ */
+export type DayType =
+  | "monday"
+  | "tuesday"
+  | "wednesday"
+  | "thursday"
+  | "friday"
+  | "saturday"
+  | "sunday";

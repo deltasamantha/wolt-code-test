@@ -1,7 +1,7 @@
 import data from "../config/data.json";
+import {DisplayTimeSlot, Slot} from "../models/DisplayTimeSlot";
 import {JSONObject} from "../models/JSONObject";
-import {DayType, TimeSlot} from "../models/OpeningHours";
-import {DisplayTimeSlot, Slot} from "../models/TimeSlot";
+import {DayType, TimeSlot} from "../models/TimeSlot";
 
 export const getHoursData = (): DisplayTimeSlot[] => {
   return setupOpeningHoursData(data);

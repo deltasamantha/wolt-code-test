@@ -1,5 +1,5 @@
 import {setupOpeningHoursData} from "./DataUtils";
-import {DisplayTimeSlot} from "../models/TimeSlot";
+import {DisplayTimeSlot} from "../models/DisplayTimeSlot";
 
 describe("setupOpeningHoursData", () => {
   test("Get display time slots array from JSON object", () => {

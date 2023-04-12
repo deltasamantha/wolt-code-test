@@ -3,7 +3,7 @@ import {View} from "react-native";
 
 import {styles} from "./SlotsList.styles";
 import locale from "../../config/Locale";
-import {Slot} from "../../models/TimeSlot";
+import {Slot} from "../../models/DisplayTimeSlot";
 import {getTimeSlotTimeStamp} from "../../utils/DateTimeUtils";
 import AppText from "../AppText/AppText";
 
