@@ -9,14 +9,13 @@ import {
   Roboto_500Medium,
   Roboto_700Bold,
 } from "@expo-google-fonts/roboto";
-import Constants from "expo-constants";
 import * as SplashScreen from "expo-splash-screen";
 import {StatusBar} from "expo-status-bar";
 import {useCallback} from "react";
 import {SafeAreaProvider} from "react-native-safe-area-context";
 
-import StorybookUIRoot from "./.storybook/index";
 import {styles} from "./App.styles";
+import StorybookSwitch from "./components/StorybookSwitch/StorybookSwitch";
 import HomeScreen from "./screens/HomeScreen/HomeScreen";
 
 const App: React.FC = () => {
@@ -36,15 +35,11 @@ const App: React.FC = () => {
   return (
     <SafeAreaProvider style={styles.rootView} onLayout={onLayoutRootView}>
       <StatusBar style="dark" />
-      <HomeScreen />
+      <StorybookSwitch>
+        <HomeScreen />
+      </StorybookSwitch>
     </SafeAreaProvider>
   );
 };
 
-let AppEntryPoint = App;
-
-if (Constants.expoConfig?.extra?.storybookEnabled) {
-  AppEntryPoint = StorybookUIRoot;
-}
-
-export default AppEntryPoint;
+export default App;
