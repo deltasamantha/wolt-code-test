@@ -13,7 +13,7 @@ export const styles = StyleSheet.create({
   },
   list: {
     minWidth: "90%",
-    maxHeight: "70%",
+    maxHeight: "80%",
     height: "auto",
     minHeight: "30%",
     alignSelf: "center",

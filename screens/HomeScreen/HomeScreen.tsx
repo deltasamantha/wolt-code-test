@@ -1,5 +1,6 @@
 import React, {useMemo} from "react";
 import {View, FlatList} from "react-native";
+import Animated, {StretchInY} from "react-native-reanimated";
 import {SafeAreaView} from "react-native-safe-area-context";
 
 import {styles} from "./HomeScreen.styles";
@@ -19,26 +20,28 @@ const HomeScreen: React.FC = () => {
   return (
     <SafeAreaView style={styles.rootContainer} edges={["top", "bottom"]}>
       <CoverBoard />
-      <FlatList
-        style={styles.list}
-        data={slotData}
-        contentContainerStyle={styles.listContent}
-        renderItem={({item, index}) => (
-          <ListItem
-            day={item.day}
-            slots={item.slots}
-            index={index}
-            isToday={item.day === getTodayDay()}
-          />
-        )}
-        ListHeaderComponent={<ListHeader />}
-        ListFooterComponent={<View style={styles.listFooter} />}
-        ItemSeparatorComponent={() => <ListSeparator />}
-        ListEmptyComponent={<ListPlaceholder />}
-        keyExtractor={item => item.day}
-        stickyHeaderIndices={[0]}
-        showsVerticalScrollIndicator={false}
-      />
+      <Animated.View entering={StretchInY}>
+        <FlatList
+          style={styles.list}
+          data={slotData}
+          contentContainerStyle={styles.listContent}
+          renderItem={({item, index}) => (
+            <ListItem
+              day={item.day}
+              slots={item.slots}
+              index={index}
+              isToday={item.day === getTodayDay()}
+            />
+          )}
+          ListHeaderComponent={<ListHeader />}
+          ListFooterComponent={<View style={styles.listFooter} />}
+          ItemSeparatorComponent={() => <ListSeparator />}
+          ListEmptyComponent={<ListPlaceholder />}
+          keyExtractor={item => item.day}
+          stickyHeaderIndices={[0]}
+          showsVerticalScrollIndicator={false}
+        />
+      </Animated.View>
     </SafeAreaView>
   );
 };
