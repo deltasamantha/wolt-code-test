@@ -3,6 +3,7 @@ import {View, FlatList} from "react-native";
 import {SafeAreaView} from "react-native-safe-area-context";
 
 import {styles} from "./HomeScreen.styles";
+import CoverBoard from "../../components/CoverBoard/CoverBoard";
 import ListHeader from "../../components/ListHeader/ListHeader";
 import ListItem from "../../components/ListItem/ListItem";
 import ListPlaceholder from "../../components/ListPlaceholder/ListPlaceholder";
@@ -17,6 +18,7 @@ const HomeScreen: React.FC = () => {
 
   return (
     <SafeAreaView style={styles.rootContainer} edges={["top", "bottom"]}>
+      <CoverBoard />
       <FlatList
         style={styles.list}
         data={slotData}
