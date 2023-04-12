@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListPlaceholder Should render ListItem properly 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#FFFFFF",
+      "justifyContent": "center",
+      "minHeight": 200,
+    }
+  }
+>
+  <Text
+    style={
+      [
+        {
+          "color": "#A1A2A4",
+          "fontFamily": "Roboto_400Regular",
+          "fontSize": 16,
+          "lineHeight": 22,
+        },
+        undefined,
+      ]
+    }
+  >
+    Sorry we don't have any slots available!
+  </Text>
+</View>
+`;

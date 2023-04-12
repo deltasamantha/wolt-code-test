@@ -4,7 +4,18 @@ import {View} from "react-native";
 import ListItem, {Props} from "./ListItem";
 import {storyStyles} from "./ListItem.styles";
 import {DayType} from "../../models/OpeningHours";
-import {mockedSlots} from "../SlotsList/mockedData";
+import {Slot} from "../../models/TimeSlot";
+
+const mockedSlots: Slot[] = [
+  {
+    open: 36000,
+    close: 43200,
+  },
+  {
+    open: 43500,
+    close: 75600,
+  },
+];
 
 const ListItemMeta: Meta<Props> = {
   title: "ListItem",

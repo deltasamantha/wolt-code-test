@@ -1,6 +1,7 @@
 import dayjs from "dayjs";
 
-import {maxSeconds} from "../config/DateTimeConfig";
+import {DATE_NAME_FORMAT, maxSeconds} from "../config/DateTimeConfig";
+import locale from "../config/Locale";
 
 /**
  * Format the open and close time to be shown in the time slots
@@ -17,7 +18,7 @@ export const getTimeSlotTimeStamp = (
     return `${getTimeStamp(openingTime)} - ${getTimeStamp(closingTime ?? 0)}`;
   } catch (error) {
     console.log("error", error);
-    return "Invalid time slot";
+    return locale.invalidSlot;
   }
 };
 
@@ -45,7 +46,7 @@ export const getHoursAndMinutes = (seconds: number) => {
 };
 
 export const getTimestampSuffix = (hours: number) => {
-  return hours >= 11 ? "PM" : "AM";
+  return hours >= 11 ? locale.pm : locale.am;
 };
 
 export const format12Hours = (hours: number) => {
@@ -62,5 +63,5 @@ export const padZero = (num: number) => {
  * @returns today name in lowercase
  */
 export const getTodayDay = () => {
-  return dayjs().format("dddd").toLowerCase();
+  return dayjs().format(DATE_NAME_FORMAT).toLowerCase();
 };

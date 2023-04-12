@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListHeader Should render ListHeader properly 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "#FFFFFF",
+      "borderTopEndRadius": 10,
+      "borderTopStartRadius": 10,
+      "flexDirection": "column",
+      "paddingHorizontal": 16,
+      "paddingTop": 16,
+    }
+  }
+>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "paddingBottom": 4,
+      }
+    }
+    testID="clockImage"
+  >
+    <View
+      style={
+        {
+          "backgroundColor": "#A1A2A4",
+          "borderRadius": 20,
+          "height": 40,
+          "width": 40,
+        }
+      }
+    />
+    <Text
+      style={
+        [
+          {
+            "color": "#202125",
+            "fontFamily": "Roboto_700Bold",
+            "fontSize": 24,
+            "lineHeight": 30,
+          },
+          {
+            "marginLeft": 10,
+          },
+        ]
+      }
+    >
+      Opening hours
+    </Text>
+  </View>
+  <View
+    style={
+      [
+        {
+          "height": 1,
+          "width": "100%",
+        },
+        {
+          "backgroundColor": "#202125",
+        },
+      ]
+    }
+    testID="divider"
+  />
+</View>
+`;

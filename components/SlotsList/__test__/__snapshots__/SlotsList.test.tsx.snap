@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SlotsList Should render SlotsList properly 1`] = `
+<View
+  style={
+    {
+      "alignItems": "flex-end",
+      "flexDirection": "column",
+    }
+  }
+>
+  <Text
+    style={
+      [
+        {
+          "color": "#A1A2A4",
+          "fontFamily": "Roboto_400Regular",
+          "fontSize": 16,
+          "lineHeight": 22,
+        },
+        undefined,
+      ]
+    }
+  >
+    Closed
+  </Text>
+</View>
+`;

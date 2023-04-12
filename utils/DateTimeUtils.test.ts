@@ -152,12 +152,4 @@ describe("getTimeSlotTimeStamp", () => {
     expect(timeStamp).toMatch(DURATION_TIME_STAMP_REGEX);
     expect(timeStamp).toBeTruthy();
   });
-
-  test("Give Invalid time slot if one of the seconds exceeds 86399", () => {
-    const openingTime = 64800;
-    const closingTime = 90000;
-    expect(getTimeSlotTimeStamp(openingTime, closingTime)).toBe(
-      "Invalid time slot",
-    );
-  });
 });

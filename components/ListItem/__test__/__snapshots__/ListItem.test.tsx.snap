@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListItem Should render ListItem properly 1`] = `
+<View
+  style={
+    {
+      "alignItems": "flex-start",
+      "backgroundColor": "#FFFFFF",
+      "flexDirection": "row",
+      "justifyContent": "space-between",
+      "paddingHorizontal": 16,
+      "paddingVertical": 10,
+    }
+  }
+>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "flexDirection": "row",
+      }
+    }
+  >
+    <Text
+      style={
+        [
+          {
+            "color": "#202125",
+            "fontFamily": "Roboto_500Medium",
+            "fontSize": 16,
+            "lineHeight": 22,
+          },
+          undefined,
+        ]
+      }
+    >
+      Monday
+    </Text>
+  </View>
+  <View
+    style={
+      {
+        "alignItems": "flex-end",
+        "flexDirection": "column",
+      }
+    }
+  >
+    <Text
+      style={
+        [
+          {
+            "color": "#A1A2A4",
+            "fontFamily": "Roboto_400Regular",
+            "fontSize": 16,
+            "lineHeight": 22,
+          },
+          undefined,
+        ]
+      }
+    >
+      Closed
+    </Text>
+  </View>
+</View>
+`;

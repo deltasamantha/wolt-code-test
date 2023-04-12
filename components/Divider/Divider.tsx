@@ -12,7 +12,10 @@ export interface Props {
 
 const Divider: React.FC<Props> = ({type = "dark"}: Props) => {
   return (
-    <View style={[styles.divider, {backgroundColor: getDividerColor(type)}]} />
+    <View
+      testID="divider"
+      style={[styles.divider, {backgroundColor: getDividerColor(type)}]}
+    />
   );
 };
 

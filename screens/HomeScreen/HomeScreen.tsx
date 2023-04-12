@@ -5,6 +5,7 @@ import {SafeAreaView} from "react-native-safe-area-context";
 import {styles} from "./HomeScreen.styles";
 import ListHeader from "../../components/ListHeader/ListHeader";
 import ListItem from "../../components/ListItem/ListItem";
+import ListPlaceholder from "../../components/ListPlaceholder/ListPlaceholder";
 import ListSeparator from "../../components/ListSeparator/ListSeparator";
 import {getHoursData} from "../../utils/DataUtils";
 import {getTodayDay} from "../../utils/DateTimeUtils";
@@ -27,9 +28,10 @@ const HomeScreen: React.FC = () => {
             isToday={item.day === getTodayDay()}
           />
         )}
-        ListHeaderComponent={<ListHeader title="Opening hours" />}
+        ListHeaderComponent={<ListHeader />}
         ListFooterComponent={<View style={styles.listFooter} />}
         ItemSeparatorComponent={() => <ListSeparator />}
+        ListEmptyComponent={<ListPlaceholder />}
         keyExtractor={item => item.day}
         stickyHeaderIndices={[0]}
         showsVerticalScrollIndicator={false}

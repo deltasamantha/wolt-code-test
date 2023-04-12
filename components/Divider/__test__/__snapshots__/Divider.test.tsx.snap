@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Divider Should render Divider properly 1`] = `
+<View
+  style={
+    [
+      {
+        "height": 1,
+        "width": "100%",
+      },
+      {
+        "backgroundColor": "#202125",
+      },
+    ]
+  }
+  testID="divider"
+/>
+`;

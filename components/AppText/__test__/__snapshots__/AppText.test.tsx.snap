@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppText Should render AppText properly 1`] = `
+<Text
+  style={
+    [
+      {
+        "color": "#202125",
+        "fontFamily": "Roboto_400Regular",
+        "fontSize": 12,
+        "lineHeight": 16,
+      },
+      undefined,
+    ]
+  }
+>
+  Code test
+</Text>
+`;

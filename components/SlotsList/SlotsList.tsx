@@ -2,6 +2,7 @@ import React from "react";
 import {View} from "react-native";
 
 import {styles} from "./SlotsList.styles";
+import locale from "../../config/Locale";
 import {Slot} from "../../models/TimeSlot";
 import {getTimeSlotTimeStamp} from "../../utils/DateTimeUtils";
 import AppText from "../AppText/AppText";
@@ -15,7 +16,7 @@ const SlotsList: React.FC<Props> = ({slots}: Props) => {
     <View style={styles.rootContainer}>
       {!slots.length && (
         <AppText type="regular" color="light" size="m">
-          Closed
+          {locale.closed}
         </AppText>
       )}
       {!!slots &&

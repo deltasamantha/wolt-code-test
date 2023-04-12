@@ -9,3 +9,5 @@ export const TIME_STAMP_REGEX =
 
 export const DURATION_TIME_STAMP_REGEX =
   /\d{1,2}\s{0,2}([AaPp][Mm])\s{0,2}(-)\s{0,2}\d{1,2}\s{0,2}([AaPp][Mm])/g;
+
+export const DATE_NAME_FORMAT = "dddd";

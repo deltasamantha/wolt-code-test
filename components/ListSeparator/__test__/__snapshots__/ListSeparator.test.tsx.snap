@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListSeparator Should render ListHeader properly 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "#FFFFFF",
+      "paddingHorizontal": 16,
+    }
+  }
+>
+  <View
+    style={
+      [
+        {
+          "height": 1,
+          "width": "100%",
+        },
+        {
+          "backgroundColor": "#EEEEEE",
+        },
+      ]
+    }
+    testID="divider"
+  />
+</View>
+`;

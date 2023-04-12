@@ -3,7 +3,18 @@ import {View} from "react-native";
 
 import SlotsList, {Props} from "./SlotsList";
 import {storyStyles} from "./SlotsList.styles";
-import {mockedSlots} from "./mockedData";
+import {Slot} from "../../models/TimeSlot";
+
+const mockedSlots: Slot[] = [
+  {
+    open: 36000,
+    close: 43200,
+  },
+  {
+    open: 43500,
+    close: 75600,
+  },
+];
 
 const ListItemMeta: Meta<Props> = {
   title: "SlotsList",

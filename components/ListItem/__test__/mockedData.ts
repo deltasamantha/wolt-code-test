@@ -1,6 +1,6 @@
-import {Slot} from "../../models/TimeSlot";
+import {Slot} from "../../../models/TimeSlot";
 
-export const mockedSlots: Slot[] = [
+export const slotsData: Slot[] = [
   {
     open: 36000,
     close: 43200,

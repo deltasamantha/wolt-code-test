@@ -2,6 +2,7 @@ import React from "react";
 import {View} from "react-native";
 
 import {styles} from "./ListItem.styles";
+import locale from "../../config/Locale";
 import {DayType} from "../../models/OpeningHours";
 import {Slot} from "../../models/TimeSlot";
 import AppText from "../AppText/AppText";
@@ -18,7 +19,7 @@ const ListItem: React.FC<Props> = ({day, slots, isToday}: Props) => {
     <View style={styles.rootContainer}>
       <View style={styles.dateContainer}>
         <AppText size="m" type="semiBold">
-          {day}
+          {locale.weekDay[day]}
         </AppText>
         {isToday && (
           <AppText
@@ -26,7 +27,7 @@ const ListItem: React.FC<Props> = ({day, slots, isToday}: Props) => {
             type="bold"
             color="accent"
             style={styles.todayIndicator}>
-            TODAY
+            {locale.today.toUpperCase()}
           </AppText>
         )}
       </View>
