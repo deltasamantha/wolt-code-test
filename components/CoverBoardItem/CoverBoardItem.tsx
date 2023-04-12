@@ -1,5 +1,6 @@
+import {Image} from "expo-image";
 import React, {useEffect} from "react";
-import {Image, ImageSourcePropType, ImageStyle, StyleProp} from "react-native";
+import {ImageSourcePropType, ImageStyle, StyleProp} from "react-native";
 import Animated, {
   Extrapolate,
   interpolate,
@@ -33,6 +34,9 @@ const CoverBoardItem: React.FC<Props> = ({
   style,
   testID,
 }: Props) => {
+  const blurhash =
+    "|rF?hV%2WCj[ayj[a|j[az_NaeWBj@ayfRayfQfQM{M|azj[azf6fQfQfQIpWXofj[ayj[j[fQayWCoeoeaya}j[ayfQa{oLj?j[WVj[ayayj[fQoff7azayj[ayj[j[ayofayayayj[fQj[ayayj[ayfjj[j[ayjuayj[";
+
   const translation = useSharedValue<number>(0);
 
   useEffect(() => {
@@ -70,6 +74,11 @@ const CoverBoardItem: React.FC<Props> = ({
         {left: destinationX, top: destinationY},
         plate1Animation,
       ]}
+      placeholder={blurhash}
+      contentFit="cover"
+      blurRadius={0} //should animate this
+      cachePolicy="memory-disk"
+      priority="high"
     />
   );
 };
