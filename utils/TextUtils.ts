@@ -44,11 +44,11 @@ export const getFontLineHeight = (type: TextSizeType) => {
 export const getFontFamily = (type: TextType) => {
   switch (type) {
     case "regular":
-      return "Roboto_400Regular";
+      return theme.fontFamily.regular;
     case "semiBold":
-      return "Roboto_500Medium";
+      return theme.fontFamily.semiBold;
     case "bold":
-      return "Roboto_700Bold";
+      return theme.fontFamily.bold;
   }
 };
 

@@ -56,15 +56,18 @@ describe("getFontLineHeight", () => {
 
 describe("getFontFamily", () => {
   test("Font face for text type regular", () => {
-    expect(getFontFamily("regular")).toBe("Roboto_400Regular");
+    const fontFamily = theme.fontFamily.regular;
+    expect(getFontFamily("regular")).toBe(fontFamily);
   });
 
   test("Font face for text type semiBold", () => {
-    expect(getFontFamily("semiBold")).toBe("Roboto_500Medium");
+    const fontFamily = theme.fontFamily.semiBold;
+    expect(getFontFamily("semiBold")).toBe(fontFamily);
   });
 
   test("Font face for text type bold", () => {
-    expect(getFontFamily("bold")).toBe("Roboto_700Bold");
+    const fontFamily = theme.fontFamily.bold;
+    expect(getFontFamily("bold")).toBe(fontFamily);
   });
 });
 

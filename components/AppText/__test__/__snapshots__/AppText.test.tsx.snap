@@ -6,7 +6,7 @@ exports[`AppText Should render AppText properly 1`] = `
     [
       {
         "color": "#202125",
-        "fontFamily": "Roboto_400Regular",
+        "fontFamily": "Roboto-Regular",
         "fontSize": 12,
         "lineHeight": 16,
       },

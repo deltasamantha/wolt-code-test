@@ -96,7 +96,7 @@ describe("AppText", () => {
 
   it("Should render regular font variant", () => {
     const sampleText = "Code test";
-    const fontFamily = "Roboto_400Regular";
+    const fontFamily = theme.fontFamily.regular;
     render(<AppText type="regular">{sampleText}</AppText>);
     const text = screen.getByText(sampleText);
     expect(text).toBeDefined();
@@ -107,7 +107,7 @@ describe("AppText", () => {
 
   it("Should render semi bold font variant", () => {
     const sampleText = "Code test";
-    const fontFamily = "Roboto_500Medium";
+    const fontFamily = theme.fontFamily.semiBold;
     render(<AppText type="semiBold">{sampleText}</AppText>);
     const text = screen.getByText(sampleText);
     expect(text).toBeDefined();
@@ -118,7 +118,7 @@ describe("AppText", () => {
 
   it("Should render bold font variant", () => {
     const sampleText = "Code test";
-    const fontFamily = "Roboto_700Bold";
+    const fontFamily = theme.fontFamily.bold;
     render(<AppText type="bold">{sampleText}</AppText>);
     const text = screen.getByText(sampleText);
     expect(text).toBeDefined();
@@ -129,7 +129,7 @@ describe("AppText", () => {
 
   it("Should render bold large light variant", () => {
     const sampleText = "Code test";
-    const fontFamily = "Roboto_700Bold";
+    const fontFamily = theme.fontFamily.bold;
     const color = theme.colors.colorLight;
     const fontSize = theme.fontSize.large;
     render(

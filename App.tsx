@@ -4,13 +4,7 @@
  * @description Code test - Assignment from Wolt - Senior React Native Engineer, Courier Group
  */
 
-import {
-  useFonts,
-  Roboto_300Light,
-  Roboto_400Regular,
-  Roboto_500Medium,
-  Roboto_700Bold,
-} from "@expo-google-fonts/roboto";
+import {useFonts} from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
 import {StatusBar} from "expo-status-bar";
 import {useCallback} from "react";
@@ -20,12 +14,13 @@ import {styles} from "./App.styles";
 import StorybookSwitch from "./components/StorybookSwitch/StorybookSwitch";
 import HomeScreen from "./screens/HomeScreen/HomeScreen";
 
+SplashScreen.preventAutoHideAsync();
+
 const App: React.FC = () => {
   const [fontsLoaded] = useFonts({
-    Roboto_300Light,
-    Roboto_400Regular,
-    Roboto_500Medium,
-    Roboto_700Bold,
+    "Roboto-Regular": require("./assets/fonts/Roboto-Regular.ttf"),
+    "Roboto-Medium": require("./assets/fonts/Roboto-Medium.ttf"),
+    "Roboto-Bold": require("./assets/fonts/Roboto-Bold.ttf"),
   });
 
   const onLayoutRootView = useCallback(async () => {
@@ -33,6 +28,10 @@ const App: React.FC = () => {
       await SplashScreen.hideAsync();
     }
   }, [fontsLoaded]);
+
+  if (!fontsLoaded) {
+    return null;
+  }
 
   return (
     <SafeAreaProvider style={styles.rootView} onLayout={onLayoutRootView}>

@@ -16,7 +16,7 @@ exports[`ListPlaceholder Should render ListItem properly 1`] = `
       [
         {
           "color": "#A1A2A4",
-          "fontFamily": "Roboto_400Regular",
+          "fontFamily": "Roboto-Regular",
           "fontSize": 16,
           "lineHeight": 22,
         },

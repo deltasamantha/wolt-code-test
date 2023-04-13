@@ -30,6 +30,11 @@ const theme = {
     medium: 22,
     large: 30,
   },
+  fontFamily: {
+    regular: "Roboto-Regular",
+    semiBold: "Roboto-Medium",
+    bold: "Roboto-Bold",
+  },
   opacity: {
     shadow: 0.2,
   },

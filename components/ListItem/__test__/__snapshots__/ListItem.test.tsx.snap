@@ -26,7 +26,7 @@ exports[`ListItem Should render ListItem properly 1`] = `
         [
           {
             "color": "#202125",
-            "fontFamily": "Roboto_500Medium",
+            "fontFamily": "Roboto-Medium",
             "fontSize": 16,
             "lineHeight": 22,
           },
@@ -50,7 +50,7 @@ exports[`ListItem Should render ListItem properly 1`] = `
         [
           {
             "color": "#A1A2A4",
-            "fontFamily": "Roboto_400Regular",
+            "fontFamily": "Roboto-Regular",
             "fontSize": 16,
             "lineHeight": 22,
           },

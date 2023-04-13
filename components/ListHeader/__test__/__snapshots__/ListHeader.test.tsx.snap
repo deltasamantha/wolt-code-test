@@ -37,7 +37,7 @@ exports[`ListHeader Should render ListHeader properly 1`] = `
         [
           {
             "color": "#202125",
-            "fontFamily": "Roboto_700Bold",
+            "fontFamily": "Roboto-Bold",
             "fontSize": 24,
             "lineHeight": 30,
           },
